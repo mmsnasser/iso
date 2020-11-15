@@ -20,7 +20,7 @@ for k=1:3
         cap=[];
         return;
     end
-    [cent(k),rd(k)] = my3Pts(aa,bb,bb/(abs(bb)^2));
+    [cent(k),rd(k)] = my3Pts2(aa,bb,bb/(abs(bb)^2));
     ang{k}    = carg([aa-cent(k),bb-cent(k)]);
 end
 for k=1:3

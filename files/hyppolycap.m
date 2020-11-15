@@ -15,7 +15,7 @@ m          = length(ver);ver(m+1)=ver(1);
 [s,sp]     =   deltw(t,m,3);
 for k=1:m
     aa        = ver(k);  bb = ver(k+1);
-    [cent(k),rd(k)] = my3Pts(aa,bb,bb/(abs(bb)^2));
+    [cent(k),rd(k)] = my3Pts2(aa,bb,bb/(abs(bb)^2));
     ang{k}    = carg([aa-cent(k),bb-cent(k)]);
 end
 for k=1:m
